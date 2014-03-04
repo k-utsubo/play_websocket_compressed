@@ -1,0 +1,17 @@
+@(code:String)(implicit request: RequestHeader)
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")"></script>
+<script src="@routes.Assets.at("javascripts/inflate.js")"></script>
+<script src="@routes.Assets.at("javascripts/base64.js")"></script>
+<script src="@routes.Assets.at("javascripts/utf.js")"></script>
+<script type="text/javascript" charset="utf-8" src="@routes.Application.boardJs(code)"></script>
+</head>
+<body>
+  <div id="data"></div>
+</body>
+</html>
